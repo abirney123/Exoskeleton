@@ -4,7 +4,7 @@ In this project, we analyze EEG data with the intention of improving brain-compu
 
 Luciw, M., Jarocka, E. & Edin, B. Multi-channel EEG recordings during 3,936 grasp and lift trials with varying weight and friction. Sci Data 1, 140047 (2014). https://doi.org/10.1038/sdata.2014.47
 
-This project was implemented by Alaina Birney, Yoonki Hong, and Ashley Heath of the University of Vermont for the course Brain Computer Interfaces. A full report on this project can be found within the file
+This project was implemented by Alaina Birney, Yoonki Hong, and Ashley Heath of the University of Vermont for the course Brain Computer Interfaces. A full report on this project can be found within the file "BCI_Project_3_Report.pdf": https://github.com/abirney123/Exoskeleton/blob/b60fe66f92959574c19d7306a7c4dc82aaac78b8/BCI_Project_3_Report.pdf
 
 ## README for WAY-EEG-GAL dataset
 ## Multi-channel EEG Recordings During 3,936 Grasp and Lift Trials with Varying Weight and Friction
