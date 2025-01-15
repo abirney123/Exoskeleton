@@ -1,29 +1,27 @@
 # Theraputic Robotic Exoskeleton
 
-In this project, we analyze EEG data with the intention of improving brain-computer interfaces (BCIs) aimed at restoring hand function in individuals with motor impairments, such as those caused by stroke. Specifically, we examine EEG signals related to events such as initiating hand movement in order to identify features that could inform BCIs for movement rehabilitation. Data was obtained from the study Multi-channel EEG recordings during 3,936 grasp and lift trials with varying weight and friction by Matthew D Luciw et al. :
-
-Luciw, M., Jarocka, E. & Edin, B. Multi-channel EEG recordings during 3,936 grasp and lift trials with varying weight and friction. Sci Data 1, 140047 (2014). https://doi.org/10.1038/sdata.2014.47
+In this project, we analyze EEG data with the intention of improving brain-computer interfaces (BCIs) aimed at restoring hand function in individuals with motor impairments, such as those caused by stroke. Specifically, we examine EEG signals related to events such as initiating hand movement in order to identify features that could inform BCIs for movement rehabilitation. 
 
 This project was implemented by Alaina Birney, Yoonki Hong, and Ashley Heath of the University of Vermont for the course Brain Computer Interfaces. A full report on this project can be found within the file "BCI_Project_3_Report.pdf": https://github.com/abirney123/Exoskeleton/blob/b60fe66f92959574c19d7306a7c4dc82aaac78b8/BCI_Project_3_Report.pdf
 
 ## README for WAY-EEG-GAL dataset
-## Multi-channel EEG Recordings During 3,936 Grasp and Lift Trials with Varying Weight and Friction
+Multi-channel EEG Recordings During 3,936 Grasp and Lift Trials with Varying Weight and Friction
 
-## *** the name of data directory is set to 'WAY-EEG-GAL' at default. 
-## Data of each subject must be in the sub folder of this folder its must be namped 'PX' where X is the number of subject. ###
-##  ex -  WAY-EEG-GAL/P1/ ...
-##                   /P2/ ...
+#### *** the name of data directory is set to 'WAY-EEG-GAL' at default. 
+Data of each subject must be in the sub folder of this folder its must be namped 'PX' where X is the number of subject. ###
+ex -  WAY-EEG-GAL/P1/ ...
+                   /P2/ ...
 
 
 Twelve participants performed lifiting an object. Each participant performed 9 series of lifting and total 3936 trials were done.
 In each trial, with a cue, the participant tried to grasp, lift and hold the object for seconds with the thumb and index finger. 
 During a series EEG (32 channels), EMG (five arm and hand muscles), the 3D position of both the hand and object, and force/torque at both contact plates were recorded.
 
-## Data Records
+### Data Records
 
 For each of the 12 participants, a single P structure is provided, and one HS structure and one WS structure are provided for each series. However, for a single weight series per participant, the non-EEG information was excluded, and is kept secret for a later competition. The total size of all MATLAB data structures, for all participants, stands at ~15 GB.
 
-# HS_P1_S1.mat—HS_P12_S9.mat (108 files)
+#### HS_P1_S1.mat—HS_P12_S9.mat (108 files)
 The HS_PX_SY.mat file (where X is participant number and Y is series number), contains a structure
 with all data in a single lifting series. For example, HS_P3_S2.mat contains the data for the Series 2 of Participant #3.
 
@@ -54,7 +52,7 @@ structure
         -hs.misc.samplingrate : sampling rate
 
 
-# HS_P1_ST.mat—HS_P12_ST.mat (12 files)
+#### HS_P1_ST.mat—HS_P12_ST.mat (12 files)
 Each of these files contains the eeg matrix, but not emg, kin, env, or misc.
 
 structure
@@ -69,7 +67,7 @@ structure
 
 
 
-# WS_P1_S1.mat—WS_P12_S9.mat (108 files)
+#### WS_P1_S1.mat—WS_P12_S9.mat (108 files)
 The WS_PX_SY.mat files contains a structure with the data organized in windows around every single lift, to allow easy extraction of single trials. 
 For example, WS_P2_S3.mat contains the data from the 3rd series of Participant 2.
 
@@ -112,7 +110,7 @@ Column 44 thumb grip force/load force ratio
 Column 45 total grip force/load force ratio
 
 
-# P1_AllLifts.mat—P12_AllLifts.mat (12 files)
+#### P1_AllLifts.mat—P12_AllLifts.mat (12 files)
 The PX_AllLifts.mat file contains a structure P with information about every lift performed by each participant X, such as
 the times at which specific events occurred. 
 The matrix P.AllLifts contains one row for each recorded lifting trial and 43 columns that each represents a variable pertaining to single trials. The names of the columns in P.AllLifts can be found in P.ColNames.
@@ -172,13 +170,13 @@ column    - variable            - unit       - description
 
 
 
-References
+## References
 
-# Dataset, description
+#### Dataset, description
 Multi-channel EEG Recordings During 3,936 Grasp and Lift Trials with Varying Weight and Friction
 https://www.nature.com/articles/sdata201447#Sec11
 
-# Dataset, download
+#### Dataset, download
 https://figshare.com/collections/_/988376
 
 
